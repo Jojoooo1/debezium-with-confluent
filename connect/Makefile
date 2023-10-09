@@ -3,7 +3,7 @@ SHELL := /bin/bash
 
 IMAGE="debezium-with-confluent"
 RAND := $(shell /bin/bash -c "echo $$RANDOM")
-TAG="2.3.2-${RAND}"
+TAG="2.4.0-${RAND}"
 
 build-docker-web-dev:
 	docker build -t ${IMAGE} . --progress=plain

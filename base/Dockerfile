@@ -1,4 +1,6 @@
-FROM debezium/connect-base:2.3.2.Final
+# https://github.com/debezium/container-images/tree/main/connect-base
+# https://hub.docker.com/r/debezium/connect-base/tags
+FROM debezium/connect-base:2.4.0.Final
 
 # WARNING DO NOT USE CONFLUENT_VERSION after 7.0.4 or it will throw error:
 # Caused by: java.lang.ClassNotFoundException: com.google.common.util.concurrent.internal.InternalFutureFailureAccess
